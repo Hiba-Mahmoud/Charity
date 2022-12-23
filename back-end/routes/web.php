@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Dashboard\MainController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Authentication Required => Will Be Done later
+//Dashboard
+Route::group(["prefix" => "dashboard"], function()
+{
+    Route::get('/', [MainController::class, "index"]);
+});
+
+
