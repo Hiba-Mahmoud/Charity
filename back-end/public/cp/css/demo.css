@@ -110,6 +110,9 @@
 
 /* //// Forms /// */
 /* Start Trumbowyg Text Editor */
+.trumbowyg-box {
+    overflow: hidden;
+}
 .trumbowyg-box,
 .trumbowyg-editor {
     height: 250px !important;
